@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+  font-family: SJ;
+  src: url("assets/slimjoe.otf") format("opentype");
+}
+
+@font-face {
+  font-family: BJ;
+  src: url("assets/bigjohn.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MR;
+  src: url("assets/monsterrat.otf") format("opentype");
+}
+
+
+html, body {
+  margin:0;
+  padding: 0;
+  background-color: #fefefe;
+}

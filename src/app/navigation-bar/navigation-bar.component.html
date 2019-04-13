@@ -1,0 +1,59 @@
+<div class="root" id="navigation-root1">
+  <mat-toolbar id="navigation-root2">
+    <mat-toolbar-row>
+      <div class="mobile">
+        <div class="button-wrapper">
+          <button mat-button (click)="togglePanel()">
+            <i class="material-icons">
+              menu
+            </i>
+          </button>
+        </div>
+        <span class="spacer"></span>
+<!--        <mat-form-field>-->
+<!--          <input matInput>-->
+<!--        </mat-form-field>-->
+      </div>
+      <div class="desktop">
+        <div class="button-wrapper">
+          <button routerLink="/home" mat-button>
+            <i class="material-icons">
+              home
+            </i>
+          </button>
+        </div>
+        <div class="button-wrapper">
+          <button routerLink="/create" mat-button>Create Contract</button>
+        </div>
+        <span class="spacer"></span>
+<!--        <mat-form-field>-->
+<!--          <input matInput>-->
+<!--        </mat-form-field>-->
+        <div class="button-wrapper">
+          <button mat-button>Account</button>
+        </div>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+
+<div class="sidepanel" id="sidepanel">
+  <div class="button-wrapper">
+      <button routerLink="/home" mat-button>
+      <i class="material-icons">
+        home
+      </i>
+    </button>
+  </div>
+  <div class="button-wrapper">
+    <button routerLink="/create" mat-button>Create Contract</button>
+  </div>
+  <div class="button-wrapper">
+    <button mat-button>Account</button>
+  </div>
+</div>
+
+<div class="overlay" id="nav-overlay">
+
+</div>

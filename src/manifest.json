@@ -1,0 +1,51 @@
+{
+  "name": "Otiom",
+  "short_name": "Otiom",
+  "theme_color": "#154FA0",
+  "background_color": "#154FA0",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "72x72",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "96x96",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "128x128",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "144x144",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "152x152",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "384x384",
+      "type": "image/ico"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "512x512",
+      "type": "image/ico"
+    }
+  ]
+}

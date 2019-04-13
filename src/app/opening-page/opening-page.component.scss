@@ -1,0 +1,154 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.max-size-wrapper {
+  max-width: 1260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.getting-started {
+  padding: 1.5em 0.5em;
+  text-align: center;
+}
+
+.em1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.em2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.em3 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.boldblue {
+  font-family: BJ;
+  color:#154FA0;
+}
+
+.boldred {
+  font-family: BJ;
+  color:#C90428;
+}
+
+.slimblue {
+  font-family: SJ;
+  color:#154FA0;
+}
+
+.main-text, .plan-future {
+  text-align: center;
+  padding: 0 1em;
+}
+
+.main-text {
+}
+
+.card-text {
+  padding-top: 1em;
+  div {
+    text-align: center;
+  }
+}
+
+.welcome-to {
+  padding-top: 2em;
+}
+
+.plan-future {
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+i {
+  font-size: 8em;
+  padding-bottom: 0.6em;
+}
+
+
+.single-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 270px;
+}
+
+
+@media (max-width: 1075px) {
+  .cards {
+    flex-direction: column;
+  }
+  i {
+    transform: rotate(90deg);
+    padding: 0;
+  }
+  .extra-space {
+    display: none;
+  }
+}
+
+button {
+  height: 2.5em;
+  width: 10em;
+  border-radius: 2em;
+  border: none;
+  background-color: #C90428;
+  font-family: BJ;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  margin: 1em 0 1.5em 0;
+  transition-property: transform,box-shadow,-webkit-transform;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12) !important;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+button:active {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.main-text2 {
+  font-family: MR !important;
+  font-size: 1.3em;
+  color: #154FA0;
+}
+
+img {
+  width: 6em;
+  height: auto;
+}

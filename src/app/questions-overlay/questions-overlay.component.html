@@ -1,0 +1,24 @@
+<app-navigation-bar></app-navigation-bar>
+<div class="root" id="question-body">
+  <div [ngClass]="'root-card ' + rootCardClass">
+    <mat-card-header class="question-text">
+      {{ questions[questionCounter].question }}
+    </mat-card-header>
+    <mat-card-content class="main-card-content">
+      <div *ngIf="questions[questionCounter].answers.length !== 0" style="display:flex">
+        <mat-card (click)="newQuestion()" *ngFor="let answer of questions[questionCounter].answers; let i = index" class="answer">
+          <img  [src]="questions[questionCounter].icons[i]">
+          <mat-card-content class="answer-text">
+            {{ answer }}
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div *ngIf="questions[questionCounter].answers.length === 0">
+        <mat-form-field>
+          <input matInput (keydown.enter)="newQuestion()">
+        </mat-form-field>
+        <button mat-button (click)="newQuestion()">Next</button>
+      </div>
+    </mat-card-content>
+  </div>
+</div>

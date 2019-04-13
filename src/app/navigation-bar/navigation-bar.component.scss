@@ -1,0 +1,110 @@
+.root {
+  display: flex;
+  justify-content: center;
+  min-height: 6.5vh;
+  max-width: 100%;
+  background-color: #fefefe;
+  -webkit-transition: -webkit-transition .5s ease-in-out; /* Safari */
+  transition: .5s ease-in-out all;
+}
+
+mat-toolbar {
+  max-width: 1360px;
+  background-color: #fefefe;
+  -webkit-transition: -webkit-transition .5s ease-in-out; /* Safari */
+  transition: .5s ease-in-out all;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.desktop, .mobile {
+  min-width: 100%;
+  display: flex;
+}
+
+@media (min-width: 576px) {
+  .desktop {
+    display: flex;
+  }
+  .mobile, .sidepanel {
+    display: none;
+  }
+}
+
+.search-icon {
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 0.8em;
+  min-width: 5em;
+}
+
+input {
+  font-size: 0.8em;
+}
+
+mat-form-field {
+  margin-top: 6px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 5.5em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0;
+  background-color: black;
+  -webkit-transition: -webkit-transition .2s ease-in-out; /* Safari */
+  transition: .2s ease-in-out all;
+}
+
+@media (max-width: 575.98px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+  .sidepanel {
+    display: block;
+  }
+  mat-form-field {
+    margin-bottom: 0;
+  }
+  .search-icon {
+    margin-top: 10px;
+  }
+}
+
+.sidepanel {
+  -webkit-transition: -webkit-transform .5s; /* Safari */
+  transition: transform .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateX(-110%);
+  background-color: #fefefe;
+  min-height: 100%;
+  button {
+    min-width: 50vw;
+  }
+}
