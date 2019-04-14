@@ -16,3 +16,69 @@ th.mat-sort-header-sorted {
 .highlight {
   background: #1E4768;
 }
+
+.mobile-label {
+  display:none;
+}
+
+@media(max-width: 768px) {
+  table {
+    width:96%;
+    margin:0 auto;
+  }
+
+  thead {
+    border-radius:5px;
+  }
+
+  .mobile-label {
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .mat-header-row {
+    display: none;
+  }
+
+  .mat-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px;
+    margin-left:0px;
+    min-height:24px;
+    display:flex;
+    height:180px;
+    border-bottom: 1px solid;
+    overflow:hidden;
+    justify-content: center;
+    padding:10px;
+    padding-left:20px;
+  }
+
+  .mat-cell {
+    width:100%;
+    padding-left:0!important;
+    height:180px;
+    align-items: center;
+    display:flex;
+    font-size:18px;
+    border:none;
+  }
+
+
+  .sidebar-container {
+    flex-direction:row;
+    align-items: flex-start;
+  }
+
+  .container-flex-dubio {
+    flex-direction: column;
+
+  }
+
+}
+
+mat-form-field {
+  padding-left: 9px;
+}

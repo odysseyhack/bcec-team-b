@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-statistic-blocks',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./statistic-blocks.component.scss']
 })
 export class StatisticBlocksComponent implements OnInit {
+
+  @Output() buttonClick: EventEmitter<string> = new EventEmitter();
 
   constructor() { }
 

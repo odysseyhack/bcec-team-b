@@ -5,7 +5,7 @@
       {{ questions[questionCounter].question }}
     </mat-card-header>
     <mat-card-content class="main-card-content">
-      <div *ngIf="questions[questionCounter].answers.length !== 0" style="display:flex">
+      <div *ngIf="questions[questionCounter].answers.length !== 0" class="QuestionContainer">
         <mat-card (click)="newQuestion()" *ngFor="let answer of questions[questionCounter].answers; let i = index" class="answer">
           <img  [src]="questions[questionCounter].icons[i]">
           <mat-card-content class="answer-text">
@@ -13,11 +13,15 @@
           </mat-card-content>
         </mat-card>
       </div>
-      <div *ngIf="questions[questionCounter].answers.length === 0">
+      <div class="input-field" *ngIf="questions[questionCounter].answers.length === 0">
         <mat-form-field>
           <input matInput (keydown.enter)="newQuestion()">
         </mat-form-field>
-        <button mat-button (click)="newQuestion()">Next</button>
+        <button mat-button (click)="newQuestion()">
+          <i [ngClass]="'material-icons ' + nextIconClass">
+            {{ nextIcon }}
+          </i>
+        </button>
       </div>
     </mat-card-content>
   </div>

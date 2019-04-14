@@ -17,6 +17,7 @@ import {ColorShifterService} from "./navigation-bar/color-shifter.service";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { OpeningPageComponent } from './opening-page/opening-page.component';
+import { ContractOverlayComponent } from './home/contract-overlay/contract-overlay.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { OpeningPageComponent } from './opening-page/opening-page.component';
     ListComponent,
     LandingPageComponent,
     QuestionsOverlayComponent,
-    OpeningPageComponent
+    OpeningPageComponent,
+    ContractOverlayComponent
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,24 @@
 <div class="root" xmlns="http://www.w3.org/1999/html">
   <div class="container-blocks-stats">
-    <mat-card>
-      <img mat-card-image src="https://genesis.vision/api/v1.0/file/36dbb999-d80a-4fec-85c2-480eb3768009">
+    <mat-card (click)="buttonClick.emit('rating')">
+      <img mat-card-image src="assets/icons/presentation-4.svg">
       <mat-card-title>Rating</mat-card-title>
-      <mat-card-subtitle>The best pensions in their class</mat-card-subtitle>
+      <mat-card-subtitle>Canidates for the new top</mat-card-subtitle>
     </mat-card>
-    <mat-card>
-      <img mat-card-image src="https://genesis.vision/api/v1.0/file/36dbb999-d80a-4fec-85c2-480eb3768009">
-      <mat-card-title>Rating</mat-card-title>
-      <mat-card-subtitle>The best pensions in their class</mat-card-subtitle>
+    <mat-card (click)="buttonClick.emit('top')">
+      <img mat-card-image src="assets/icons/star.svg">
+      <mat-card-title>Top</mat-card-title>
+      <mat-card-subtitle>All time most profitable</mat-card-subtitle>
     </mat-card>
-    <mat-card>
-      <img mat-card-image src="https://genesis.vision/api/v1.0/file/36dbb999-d80a-4fec-85c2-480eb3768009">
-      <mat-card-title>Rating</mat-card-title>
-      <mat-card-subtitle>The best pensions in their class</mat-card-subtitle>
+    <mat-card (click)="buttonClick.emit('new')">
+      <img mat-card-image src="assets/icons/time.svg">
+      <mat-card-title>New</mat-card-title>
+      <mat-card-subtitle>Recent pensions</mat-card-subtitle>
+    </mat-card>
+    <mat-card (click)="buttonClick.emit('popular')">
+      <img mat-card-image src="assets/icons/worldwide.svg">
+      <mat-card-title>Popular</mat-card-title>
+      <mat-card-subtitle>The biggest audience</mat-card-subtitle>
     </mat-card>
   </div>
 </div>

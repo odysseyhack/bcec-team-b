@@ -1,5 +1,7 @@
 <app-navigation-bar></app-navigation-bar>
 <div class="max-size-wrapper">
-  <app-statistic-blocks></app-statistic-blocks>
-  <app-list></app-list>
+<!--  <button (click)="contractChild.showOverlay()">SHOW</button>-->
+  <app-statistic-blocks (buttonClick)="statisticButtonClicked($event)"></app-statistic-blocks>
+  <app-list (cellClick)="contractChild.showOverlay()"></app-list>
 </div>
+<app-contract-overlay></app-contract-overlay>

@@ -1,0 +1,162 @@
+.root {
+  //-webkit-transition: -webkit-transform 1.0s; /* Safari */
+  //transition: transform 1.0s;
+  -webkit-transition: -webkit-transition .5s ease-in-out; /* Safari */
+  transition: .5s ease-in-out all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transform: translateY(-110%);
+  background-color: #fefefe;
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:BJ;
+}
+
+button {
+  margin:5px;
+  border-radius:20px;
+  color:white!important;
+}
+
+.smallFont {
+  font-family:SJ;
+}
+
+.content {
+  max-width: 1360px;
+  flex-grow: 1;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2%;
+}
+
+.info {
+  display: flex;
+  flex:1;
+  min-width: 500px;
+}
+
+.contract-info {
+  display: flex;
+  align-items: center;
+}
+
+.title-stuff {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top-row {
+  display: flex;
+  width:100%;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.greenButton {
+  background-color: #5EC08B;
+  padding: 5px 15px;
+  border:none;
+  border-style: none;
+}
+
+.blueButton {
+  background-color: #8CB9DC;
+  padding: 5px 15px;
+  border:none;
+  border-style: none;
+}
+
+.blueButton, .greenButton {
+  font-size:22px;
+  width:45%;
+  height:60px;
+  margin:10px;
+  cursor:pointer;
+  transition-property: transform,box-shadow,-webkit-transform;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.blueButton:hover, .greenButton:hover {
+  box-shadow: 0 6px 6px -3px rgba(0,0,0,.2),0 10px 14px 1px rgba(0,0,0,.14),0 4px 18px 3px rgba(0,0,0,.12) !important;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.advice {
+  background-color: #E7F0F7;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.buttons {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+.imageContractContainer {
+  display: flex;
+  flex-direction: column;
+  margin:10px;
+}
+
+.totalContainerImages {
+  display: flex;
+  flex-direction: row;
+}
+
+.chartImage {
+  margin-bottom:10px;
+}
+
+.investmentContainer {
+  margin-top:10px;
+}
+
+.newspaper-image {
+  width: 200px;
+  margin: 5px;
+}
+
+@media (max-width:768px) {
+  .totalContainerImages {
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .info {
+    min-width: unset;
+  }
+
+  .button {
+    flex-direction: column;
+  }
+
+  .investmentContainer {
+    margin:10px;
+  }
+
+  .newspaper-image {
+    display: none;
+  }
+}
+

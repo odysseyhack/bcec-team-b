@@ -2,6 +2,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {QuestionModel} from "./question.model";
 import {ColorShifterService} from "../navigation-bar/color-shifter.service";
 import set = Reflect.set;
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-questions-overlay',
@@ -9,15 +10,17 @@ import set = Reflect.set;
   styleUrls: ['./questions-overlay.component.scss']
 })
 export class QuestionsOverlayComponent implements OnInit {
-  displayClass = 'hide';
   rootCardClass = 'show';
+  nextIcon = 'check';
+  nextIconClass = '';
 
   questions: QuestionModel[];
   questionCounter = 0;
 
   colors: string[];
 
-  constructor(private shifter: ColorShifterService) {
+  constructor(private shifter: ColorShifterService,
+              private router: Router) {
   }
 
   initQuestions() {
@@ -53,6 +56,11 @@ export class QuestionsOverlayComponent implements OnInit {
 
   newQuestion() {
     if (this.questionCounter === this.questions.length - 1) {
+      this.nextIcon = 'autorenew';
+      this.nextIconClass = 'twister';
+      setTimeout(() => {
+        this.router.navigateByUrl('/home');
+      }, 2500);
       return;
     }
     this.shifter.changeColor(this.colors[this.questionCounter]);
@@ -60,6 +68,9 @@ export class QuestionsOverlayComponent implements OnInit {
     setTimeout(() => {
       this.questionCounter++;
       this.rootCardClass = 'show';
+      if (this.questionCounter === this.questions.length - 1) {
+        this.nextIcon = 'done_all';
+      }
     }, 500);
 
   }
