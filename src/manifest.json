@@ -2,7 +2,7 @@
   "name": "Otiom",
   "short_name": "Otiom",
   "theme_color": "#154FA0",
-  "background_color": "#154FA0",
+  "background_color": "#fefefe",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
