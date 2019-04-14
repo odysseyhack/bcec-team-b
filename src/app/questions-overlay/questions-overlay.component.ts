@@ -25,8 +25,8 @@ export class QuestionsOverlayComponent implements OnInit {
 
   initQuestions() {
     this.questions = [];
-    this.questions.push(new QuestionModel ('What is your age?', [], ['dwadwoi', 'dwkoado']));
     this.questions.push(new QuestionModel ('Do you live together with a partner?', ['Yes', 'No'], ['assets/icons/partner.svg', 'assets/icons/single.svg']));
+    this.questions.push(new QuestionModel ('What is your age?', [], ['dwadwoi', 'dwkoado']));
     this.questions.push(new QuestionModel ('What kind of home do you live in?', ['Apartment', 'Townhouse', 'Corner house', 'Detached house'], ['assets/icons/home.svg', 'assets/icons/home-1.svg', 'assets/icons/home-2.svg', 'assets/icons/house.svg']));
     this.questions.push(new QuestionModel ('Do you rent or own the home?', ['Rent', 'Own'], ['assets/icons/key.svg', 'assets/icons/bookmark-1.svg']));
     this.questions.push(new QuestionModel ('How much is your rental or mortgage cost per month?', [], ['assets/icons/partner.svg', 'assets/icons/single.svg']));

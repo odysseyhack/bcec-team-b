@@ -149,6 +149,7 @@ img {
 
   .button {
     flex-direction: column;
+    margin-right:10px;
   }
 
   .investmentContainer {
@@ -157,6 +158,18 @@ img {
 
   .newspaper-image {
     display: none;
+  }
+
+  .blueButton, .greenButton {
+    width:100%;
+    margin: 5px 10px;
+  }
+  .top-row {
+    margin-left:10px;
+    margin-right:10px;
+    padding-right:10px;
+    margin: 10px auto;
+    flex-direction: column;
   }
 }
 

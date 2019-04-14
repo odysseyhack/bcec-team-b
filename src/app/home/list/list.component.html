@@ -31,7 +31,7 @@
   <!-- Symbol Column -->
   <ng-container matColumnDef="profit" class="headerColumn">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> Profit </th>
-    <td mat-cell (click)="cellClicked()" *matCellDef="let contract"><span class="mobile-label">Compatibility: </span> ${{(contract.moneyMade/100).toFixed(2)}} </td>
+    <td mat-cell (click)="cellClicked()" *matCellDef="let contract"><span class="mobile-label">Profit: </span> ${{(contract.moneyMade/100).toFixed(2)}} </td>
   </ng-container>
 
   <!-- Symbol Column -->
